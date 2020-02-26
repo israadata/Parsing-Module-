@@ -1,0 +1,98 @@
+<!DOC TYPE html>
+<html>
+<head>
+	<title>PARSING module</title>
+
+
+<!-- STYLE SHEETS   - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+	<style>
+
+		#container1{
+			position: relative;
+			width:300px;
+			height:auto;
+		}
+
+		#parsing{
+			padding-top:100px;
+			position: absolute;
+			margin-left: 100px;
+			text-align: left;
+			font-family: garamond;
+			font-size: 25px;
+		}
+
+		
+
+		</style>
+
+		
+<!-- S C R I P T  - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - -->
+
+
+	<script type="text/javascript">
+
+///////////////////////////////////////////////  CACHE
+
+		
+	
+		//var LANGUAGE = ["the silent ", "steep slopes and massiveness ", "floating is not exactly ", "combinations of e r  r o s  i o n ", "between faults ", "and folds ", "a great dome ", "a great domain ", "catch a blessing ", "pulled thru the reeds ", "fusking at embers ", "tipped off the throne ", "go safely down the middle ", "the earth groaned loudly ", "a profane axe bit ", "the gift of ", "a bag of winds ", "tall grass and the cow path ", "rubble kisses ", "upon a savage pedestal ", "various scree ", "consipracy in the cabinet of curriosities ", "bury the bit ", "in sawdust ", "frosted glass cornice ", "what a palace to drift to sleep ", "interstatial air ", "suspended in a vestibule ", "in the shade ", "a hand in the fog ", "of a discrete moment ", "consider satellite mapping ", "the geography of teeth ", "a tongue caught in the bit ", "charms in a cursed space ", "sounds like lapping on land ", "it can barely hold an edge ", "look thru the bust on the shelf ", "drawing features on the face of a wave ", "the only mirror the mountain sees ", "its own mine, a deep silver ", "sworn to secret sea says ", "categorically dishellved ", "the crows, a night, preen ", "the imagination is no limit ", "receive that pregnant secret ", "to stay afloat requires _________ ", "time is legion and ", "legendary orientation ", "hard for boreas to breath softly ", "or sigh ", "the dead pan don't flute ", "caught in the elevator ", "between the foundation ", "and the tip of the spire ", "you are not chaos ", "this is soft logic ", "the canopy of others ", "trojan horse potential ", "becoming less precious "];
+
+		var LANGUAGEbeta = ["keys made cleaner ", "that mans face ", "looks like a church ", "wind and rain ", "in his hands ", "fancy white clover ", "last chance gas ", "paying homage for breaking stones ", "maneuvering the basket ", "the dust of some action ", "under the thumbnail ", "comfortable living ", "on a zorched earth ", "like wood removed ", "one step from the past ", "maybe you will be seen ", "please grasp ", "largely disputed marbles ", "longing to be the curve ", "in the tunnel ", "so fine the point ", "a second hand to steady ", "the hand that points ", "to denote the place where answers are to be given", "respecting the future ", "alighting on the groves ", "not doves, but preistesses ", "the response of the oracles ", "given from the trees ", "by the branches ", "rustling in the dust ", "owing to a peculiar vapour ", "ablution in the fountain ", "placing a stone in such a manner ", "that it can be taken out ", "his locks and seals were untouched ", "but his wealth contiunally diminished ", "return to the cave ", "by the same narrow passage ", "the bull refused the food from the hand ", "magnetic practices are not practiced ", "laying on of hands ", "mesmerism ", "crisis and unobstructed visions ", "not revealing ", "techniques and practice ", "a symbolic and formal method for evoking the holy spirit ", "healing services ", "known by the royal touch ", "cannot be detected by scientific instruments ", "therfore categorized as religious beliefs ", "claimed cures with the imposition of hands "];
+
+
+
+		
+
+
+
+///////////////////////////////////////////////////////////////////////////  functions
+
+function parsing() {
+
+		var string1a=Math.floor(Math.random()* LANGUAGEbeta.length);
+		var string1b=Math.floor(Math.random()* LANGUAGEbeta.length);
+		var string1c=Math.floor(Math.random()* LANGUAGEbeta.length);
+		var string1d=Math.floor(Math.random()* LANGUAGEbeta.length);
+		var string1e=Math.floor(Math.random()* LANGUAGEbeta.length);
+		var string1f=Math.floor(Math.random()* LANGUAGEbeta.length);
+		var string1g=Math.floor(Math.random()* LANGUAGEbeta.length);
+		var string1h=Math.floor(Math.random()* LANGUAGEbeta.length);
+		var string1i=Math.floor(Math.random()* LANGUAGEbeta.length);
+		var string1j=Math.floor(Math.random()* LANGUAGEbeta.length);
+		var string1k=Math.floor(Math.random()* LANGUAGEbeta.length);
+
+
+
+		var parsing= document.getElementById ("parsing").innerHTML = LANGUAGEbeta[string1a] + LANGUAGEbeta[string1b] + LANGUAGEbeta[string1c] + LANGUAGEbeta[string1d] + LANGUAGEbeta[string1e] + LANGUAGEbeta[string1f] + LANGUAGEbeta[string1g] + LANGUAGEbeta[string1h] + LANGUAGEbeta[string1i] + LANGUAGEbeta[string1j] + LANGUAGEbeta[string1k];
+	
+
+		setTimeout('parsing()', 15000);
+
+	}
+
+	
+// /// /// //// //// ///// //// // / / / / / / / / / / / / / / / / / / / / / //// window onload
+
+window.onload = function() {
+		parsing();
+	
+	}
+
+
+	</script>
+	</head>
+
+	
+
+	<!-- HEAD / BODY           - - - - - - - - - - - - - -           - - - - - - - - - -        - - - - - - - -->
+
+	<body>
+
+		<div id="container1">
+			<div id="parsing"></div>
+			</div>
+	</body>
+</html>
